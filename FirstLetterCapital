@@ -1,0 +1,8 @@
+#if df your dataframe this script will turn full capitalised gene names to proper formating
+.simpleCap <- function(x) {
+  s <- strsplit(x, " ")[[1]]
+  paste(toupper(substring(s, 1, 1)), substring(s, 2),
+        sep = "", collapse = " ")
+}
+df$X1 <- tolower(df$X1)
+df$X1 <- apply(df, 1, .simpleCap)
