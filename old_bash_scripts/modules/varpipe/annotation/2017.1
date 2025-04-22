@@ -1,0 +1,26 @@
+#%Module######################################################################
+##
+##      annotation modulefile				# name without version
+##
+set reqs ""     ;# required modules with specific versions
+source /opt/rrzk/modules/common/common.tcl
+
+set me [module-info name]
+global message
+set message "Sets environment variables that contain annotation databases for the CCG exome/genome pipeline."
+
+proc ModulesHelp { } {
+	puts stderr "${::message}"
+}
+
+module-whatis "${::message}"
+
+# Set environment variables that contain the annotation databases
+setenv GNOMAD_EXOME "/projects/ccg-ngs/public/vardbs/gnomad/r2.0.1/exomes/"
+setenv GNOMAD_GENOME "/projects/ccg-ngs/public/vardbs/gnomad/r2.0.1/genomes/"
+setenv DBSNP "/projects/ccg-ngs/public/vardbs/dbsnp/b150/"
+setenv CLINVAR "/projects/ccg-ngs/public/vardbs/clinvar/20170217/"
+setenv INHOUSE_EXOME "/projects/ccg-ngs/public/vardbs/inhouse/201702/inhouse_integrated/2017_02/"
+setenv NIST "/projects/ccg-ngs/public/vardbs/nist/NISTIntegratedCalls_v.3.3.1.grc38.vcf"
+setenv LCR_HL "/projects/ccg-ngs/public/vardbs/lcr/btu356_LCR-hs38.bed"
+setenv GRCH38 "/projects/ccg-ngs/public/vardbs/GRCh38/"

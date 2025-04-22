@@ -1,0 +1,7 @@
+Martian Runtime - v4.0.7
+Serving UI at http://raptor1.raptor:36913?auth=vK8Q3NBRJ5Qo-BixFiOzKcECE4R1YVn9Bv20Jsi8aSI
+
+Running preflight checks (please wait)...
+2022-07-05 11:30:09 [runtime] Pipestance directory seems to have disappeared.
+          stat /projects/ccg-ngs/production/scripts/Theo/SID173917b/_log: no such file or directory
+2022-07-05 11:30:09 Shutting down.

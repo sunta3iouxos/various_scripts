@@ -1,0 +1,3 @@
+/projects-raptor/ccg-ngs/devel/
+/projects-raptor/ccg-ngs/production/
+/projects-raptor/ccg-ngs/secdev/

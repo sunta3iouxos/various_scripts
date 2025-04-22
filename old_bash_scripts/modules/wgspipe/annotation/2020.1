@@ -1,0 +1,33 @@
+#%Module######################################################################
+##
+##      annotation modulefile				# name without version
+##
+set reqs ""     ;# required modules with specific versions
+
+set me [module-info name]
+global message
+set message "Sets environment variables that contain annotation databases for the CCG genome pipeline."
+
+proc ModulesHelp { } {
+	puts stderr "${::message}"
+}
+
+module-whatis "${::message}"
+
+# Set environment variables that contain the annotation databases
+setenv CLINVAR "/projects/ccg-ngs/public/vardbs/clinvar/20200407/clinvar.sorted.tab.bgz"
+setenv INHOUSE_CNV "/projects/ccg-ngs/public/vardbs/inhouse/genome/202008/cnv/cnv_inhouse_genome_db_2020.tab.bgz"
+setenv INHOUSE_SV "/projects/ccg-ngs/public/vardbs/inhouse/genome/202008/sv/sv_inhouse_genome_db_2020.tab.bgz"
+setenv INHOUSE_SNV "/projects/ccg-ngs/public/vardbs/inhouse/genome/202008/snv_short_indel"
+setenv NIST "/projects/ccg-ngs/public/vardbs/nist/NISTIntegratedCalls_v.3.3.1.grc38.vcf"
+setenv GRCH38 "/projects/ccg-ngs/public/vardbs/GRCh38/"
+setenv ENSEMBL "/projects/ccg-ngs/public/vardbs/ensembl/101"
+setenv DBNSFP "/projects/ccg-ngs/public/vardbs/dbnsfp/v4.1a/dbNSFP4.1a_variant"
+setenv SPLICE "/projects/ccg-ngs/public/vardbs/splice/mes/"
+setenv KOZAK "/projects/ccg-ngs/public/vardbs/kozak/msb0010-0748-SD3.txt"
+setenv KG_VCF "/projects/ccg-ngs/public/1000k/1KG.phase3.GRCh38.ENRID145.hg38.vcf.gz"
+setenv GNOMAD "/projects/ccg-ngs/public/vardbs/gnomad/r3.0/genome"
+setenv DBSCSNV "/projects/ccg-ngs/public/vardbs/dbscsnv/v1.1"
+setenv CADD "/projects/ccg-ngs/public/vardbs/cadd/v1.6"
+setenv DBMTS "/projects/ccg-ngs/public/vardbs/dbmts/v1.0"
+setenv DBSNP "/projects/ccg-ngs/public/vardbs/dbsnp/b153"

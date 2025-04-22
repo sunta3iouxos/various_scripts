@@ -1,0 +1,28 @@
+#%Module1.0#####################################################################
+##
+## null modulefile
+##
+## modulefiles/null.  # Generated from null.in by configure.
+##:qqq
+
+## set reqs ""     ;# required modules with specific versions
+
+## set miniConda version 4.6.14
+
+## ModulesHelp { } {
+##        global version
+
+##        puts stderr "\tThis module sets paths for miniconda. call with conda"
+## }
+
+module-whatis    "adds environment for miniConda 4.6.14"
+
+setenv           CONDA_HOME /projects-cheops/ccg-ngs/sw/miniconda2
+prepend-path     PATH /projects-cheops/ccg-ngs/sw/miniconda2/bin/
+prepend-path     INCLUDE /projects-cheops/ccg-ngs/sw/miniconda2/include
+prepend-path     LD_LIBRARY_PATH /projects-cheops/ccg-ngs/sw/miniconda2/lib
+prepend-path     LIBRARY_PATH /projects-cheops/ccg-ngs/sw/miniconda2/lib
+
+if [ module-info mode load ] {
+   puts stderr "\tFor more information see manual pages of 'conda'"
+}

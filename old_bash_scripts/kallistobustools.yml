@@ -1,0 +1,9 @@
+name: kite
+channels:
+ - conda-forge
+ - bioconda # according to bioconda docs, conda-forge must be first priority
+ - defaults
+dependencies:
+ - python=3.7
+ - kallisto
+ - bustools  

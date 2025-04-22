@@ -1,0 +1,16 @@
+name: BSeekers 
+channels:
+  - conda-forge
+  - bioconda # according to bioconda docs, conda-forge must be first priority
+  - defaults
+dependencies:
+  - pysam
+  - matplotlib
+  - bwameth
+  - bismark
+  - trim-galore
+  - methyldackel
+  - pileometh
+  - bedtools
+  - samtools
+  - metilene 
